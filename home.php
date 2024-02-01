@@ -19,6 +19,7 @@
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>
 			    </h5>
+				<p id="datetime"></p>
 			    <a href="logout.php" class="btn btn-dark">Logout</a>
 			  </div>
 			</div>
@@ -59,11 +60,26 @@
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>
 			    </h5>
+				<p id="datetime"></p>
 			    <a href="logout.php" class="btn btn-dark">Logout</a>
 			  </div>
 			</div>
       	<?php } ?>
       </div>
+	  <script>
+        function updateDateTime() {
+            var now = new Date();
+            var datetimeContainer = document.getElementById("datetime");
+            var formattedDateTime = now.toLocaleString();
+            datetimeContainer.innerHTML = formattedDateTime;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to set the date and time immediately
+        updateDateTime();
+    </script>
 </body>
 </html>
 <?php }else{
