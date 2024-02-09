@@ -10,7 +10,7 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) { ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f8f9fa; /* Bootstrap light gray background color */
+            background-color: #f8f9fa; 
         }
         .container {
             min-height: 100vh;
@@ -18,14 +18,14 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) { ?>
         form {
             width: 100%;
             max-width: 450px;
-            background-color: #fff; /* White background color */
-            border: 1px solid #dee2e6; /* Bootstrap gray border color */
+            background-color: #fff;
+            border: 1px solid #dee2e6; 
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
             padding: 20px;
         }
         h1 {
-            color: #007bff; /* Bootstrap primary blue color */
+            color: #007bff; 
         }
         .alert {
             margin-bottom: 15px;
